@@ -2,6 +2,13 @@
 
 This repository contains Python codes designed to study Weyl nodes in Td-MoTe2 driven by a laser field. By utilizing the Floquet formalism and Wannier90 data, the code allows the user to compute bulk bands and track the Weyl nodes in the driven state through k-space.
 
+
+## Folder Structure
+
+- **`src/`**: This folder contains the source code, including the Python scripts for computing bulk bands and tracking Weyl nodes.
+- **`data/`**: This folder stores the Wannier90 output files required for the computations.
+- **`results/`**: The folder where the outputs of the computations will be saved, including bulk band plots and Weyl node tracking data.
+
 ## Project Overview
 
 The project consists of three Python scripts:
@@ -15,17 +22,6 @@ The project consists of three Python scripts:
 3. **`floquet_functions.py`**  
    Contains utility functions used by `bulk_bands.py` and `search_node.py`. This script does not contain any executable code on its own.
 
-
-## Folder Structure
-
-- **`src/`**: This folder contains the source code, including the Python scripts for computing bulk bands and tracking Weyl nodes.
-- **`data/`**: This folder stores the Wannier90 output files required for the computations.
-- **`results/`**: The folder where the outputs of the computations will be saved, including bulk band plots and Weyl node tracking data.
-
-## Performance Information
-
-- Running `bulk_bands.py` typically takes a few minutes on a standard desktop computer.
-- The `search_node.py` script, which tracks the movement of Weyl nodes, is computationally intensive and can take several days on a regular desktop. It is designed to be run on a computational cluster. For instance, on a cluster with 64 cores, this computation takes approximately 12 hours.
 
 ## Requirements
 
@@ -74,6 +70,11 @@ This module contains helper functions used by both `bulk_bands.py` and `search_n
 ## Configuration Files
 
 The YAML configuration file (e.g., `config_V.yaml`) used with `search_node.py` should contain all the necessary parameters for tracking Weyl nodes, such as the k-space grid, Floquet parameters, etc.
+
+## Performance Information
+
+- Running `bulk_bands.py` typically takes a few minutes on a standard desktop computer.
+- The `search_node.py` script, which tracks the movement of Weyl nodes, is computationally intensive and can take several days on a regular desktop. It is designed to be run on a computational cluster. For instance, on a cluster with 64 cores, this computation takes approximately 12 hours.
 
 ## License
 
