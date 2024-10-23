@@ -1,0 +1,63 @@
+---
+# OPENS THE DATA FILE
+filename: "../data/wannier90_hr_fullbands.dat"
+
+# ATOMIC PARAMETERS
+bands_per_atom: 
+  - 12
+  - 12
+  - 12
+  - 12
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+
+atom_pos: 
+  - [0.0, 3.833941936, 6.946220398]
+  - [0.0, 0.190683499, 0.204635426]
+  - [1.738499999, 2.501058102, 0.00472022]
+  - [1.738499999, 6.144316673, 7.14613533]
+  - [0.0, 5.464380741, 9.103638649]
+  - [0.0, 4.057250977, 1.561282277]
+  - [0.0, 1.836960077, 11.930217743]
+  - [0.0, 1.368423343, 5.590961933]
+  - [1.738499999, 0.870619118, 2.162138462]
+  - [1.738499999, 2.2777493, 8.502782822]
+  - [1.738499999, 4.498039722, 4.988717556]
+  - [1.738499999, 4.966577053, 12.53246212]
+
+
+# SIMULATION PARAMETERS
+total_bands: 112
+n_bands: 112
+fermi_energy: 13.2737 # eV
+a_lattice: 3.4769999981 # A
+b_lattice: 6.3350000381 # A
+c_lattice: 13.8830003738 # A
+
+# Floquet parameters
+frq: 0.135 # eV frq of the driving
+n_replicas: 1 # number of replicas considered
+
+# Number of the bands at which the node is located.
+# This will change deppending the number of replicas
+nodes_at: 
+  - 214
+  - 215
+
+# Type of node (either V or W)
+node_type: 'V'
+
+wn_W: [0.10339206, 0.05741915, -0.00019975]   
+
+
+A_field_vect_initial: 0.               # Starting field strenght
+A_field_vect_end: 0.011111111111111112 # Last field strenght
+A_field_vect_points: 5625              # Number of samples of field strenght
+lenght : [16, 16, 16]                  # Sampling points of the box centered at the weyl node in kx x ky x kz
+minsize: [5.0e-08, 7.5e-08, 1.0e-07]   # Size of the box
