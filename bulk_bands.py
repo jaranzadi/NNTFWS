@@ -5,7 +5,7 @@ import numpy as np
 import os
 import time
 from mpi4py import MPI
-from weyl_node_functions import *
+from floquet_functions import *
 import matplotlib.pyplot as plt 
 
 # Calculate the bands in a given cut
