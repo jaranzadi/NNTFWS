@@ -1,0 +1,5 @@
+numpy
+matplotlib
+numba
+mpi4py
+pyyaml
