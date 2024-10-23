@@ -15,6 +15,18 @@ The project consists of three Python scripts:
 3. **`floquet_functions.py`**  
    Contains utility functions used by `bulk_bands.py` and `search_node.py`. This script does not contain any executable code on its own.
 
+
+## Folder Structure
+
+- **`src/`**: This folder contains the source code, including the Python scripts for computing bulk bands and tracking Weyl nodes.
+- **`data/`**: This folder stores the Wannier90 output files required for the computations.
+- **`results/`**: The folder where the outputs of the computations will be saved, including bulk band plots and Weyl node tracking data.
+
+## Performance Information
+
+- Running `bulk_bands.py` typically takes a few minutes on a standard desktop computer.
+- The `search_node.py` script, which tracks the movement of Weyl nodes, is computationally intensive and can take several days on a regular desktop. It is designed to be run on a computational cluster. For instance, on a cluster with 64 cores, this computation takes approximately 12 hours.
+
 ## Requirements
 
 The following Python packages are required to run the scripts:
