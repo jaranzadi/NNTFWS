@@ -81,7 +81,7 @@ def search_in_patch(rank, size, wn, delta, lenght, fermi_energy, frq, A_field, n
 		k = np.array([kx[index[0]],ky[index[1]],kz[index[2]]])
 		time1 = time.time()
 
-		if n_replicas <= 1:
+		if n_replicas == 1:
 			H1 = H_matrix_floquet_fast_v2(k, frq, A_field, n_replicas, n_bands, total_bands, atom_pos, bands_per_atom, degeneracy, data, a_lattice, b_lattice, c_lattice, integrals_floquet)
 		else:
 			H1 = H_matrix_floquet_fast(k, frq, A_field, n_replicas, n_bands, total_bands, atom_pos, bands_per_atom, degeneracy, data, a_lattice, b_lattice, c_lattice, integrals_floquet)
