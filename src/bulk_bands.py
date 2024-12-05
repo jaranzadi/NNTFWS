@@ -26,7 +26,7 @@ def k_path(comm, rank, size, kx, ky, kz, lenght, fermi_energy, frq, A, n_replica
 		#print(a_lattice*kx[m]/(2*np.pi),b_lattice*ky[m]/(2*np.pi),c_lattice*kz[m]/(2*np.pi))
 		k_bz[m] = k
 
-		if n_replicas <= 1:
+		if n_replicas == 1:
 			H = H_matrix_floquet_fast_v2(k, frq, A, n_replicas, n_bands, total_bands, atom_pos, bands_per_atom, degeneracy, data, a_lattice, b_lattice, c_lattice, integrals_floquet)
 		else:
 			H = H_matrix_floquet_fast(k, frq, A, n_replicas, n_bands, total_bands, atom_pos, bands_per_atom, degeneracy, data, a_lattice, b_lattice, c_lattice, integrals_floquet)
