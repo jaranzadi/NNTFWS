@@ -1,6 +1,6 @@
 # Nonperturbative Nonlinear Transport in a Floquet-Weyl Semimetal
 
-This repository contains Python codes designed to study Weyl nodes in Td-MoTe2 driven by a laser field. By utilizing the Floquet formalism and Wannier90 data, the code allows the user to compute bulk bands and track the Weyl nodes in the driven state through k-space.
+This repository contains Python codes designed to study Weyl nodes in Td-MoTe2 driven by a laser field. By utilizing the Floquet formalism and Wannier90 data, the code allows the user to compute bulk bands and track the Weyl nodes in the driven state through k-space. This work was conducted as theoretical support for https://arxiv.org/pdf/2409.04531.
 
 
 ## Folder Structure
